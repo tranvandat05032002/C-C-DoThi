@@ -1,0 +1,92 @@
+//	freopen("ThicuoikyInput.txt","r",stdin);
+//	freopen("ThicuoikyOutput.txt","w",stdout);
+//	int select;
+//	cin >> select;
+//	if(select == 1){
+//		cout << "Nhap So Luong Sinh Vien Khoi A: ";
+//		int nA;
+//		cin >> nA;
+//		ThiSinhKhoiA inA[nA];
+//		cout << "Nhap So Luong Sinh Vien Khoi B: ";
+//		int nB;
+//		cin >> nB;
+//		ThiSinhKhoiB inB[nB];
+//		cout << "Nhap So Luong Sinh Vien Khoi C: ";
+//		int nC;
+//		cin >> nC;
+//		ThiSinhKhoiC inC[nC];
+//		for(int i = 0; i < nA; i++){
+//			inA[i].NhapThiSinhKhoiA();
+//		}
+//		for(int i = 0; i < nB; i++){
+//			inB[i].NhapThiSinhKhoiB();
+//		}
+//		for(int i = 0; i < nC; i++){
+//			inC[i].NhapThiSinhKhoiC();
+//		}
+//		cout << "Danh Sach Sinh Vien Khoi A: " << endl;
+//		for(int i = 0; i < nA; i++){
+//			inA[i].PrintThiSinhKhoiA();
+//		}
+//		cout << "Danh Sach Sinh Vien Khoi B: " << endl;
+//		for(int i = 0; i < nB; i++){
+//			inB[i].PrintThiSinhKhoiB();
+//		}
+//		cout << "Danh Sach Sinh Vien Khoi C: " << endl;
+//		for(int i = 0; i < nC; i++){
+//			inC[i].PrintThiSinhKhoiC();
+//		}
+//	}
+		int nA, nB, nC;
+		cout << "Nhap So Luong Sinh Vien Khoi A: ";
+//		int nA;
+		cin >> nA;
+//		ThiSinhKhoiA inA[nA];
+		cout << "Nhap So Luong Sinh Vien Khoi B: ";
+//		int nB;
+		cin >> nB;
+//		ThiSinhKhoiB inB[nB];
+		cout << "Nhap So Luong Sinh Vien Khoi C: ";
+//		int nC;
+		cin >> nC;
+//		ThiSinhKhoiC inC[nC];
+	while(1){
+		int select;
+		cin >> select;
+		ThiSinhKhoiA inA[nA];
+		ThiSinhKhoiB inB[nB];
+		ThiSinhKhoiC inC[nC];
+		switch(select){
+			case 1:{
+				for(int i = 0; i < nA; i++){
+					inA[i].NhapThiSinhKhoiA();
+				}
+				for(int i = 0; i < nB; i++){
+					inB[i].NhapThiSinhKhoiB();
+				}
+				for(int i = 0; i < nC; i++){
+					inC[i].NhapThiSinhKhoiC();
+				}
+				break;
+			}
+			case 2:{
+				cout << "Danh Sach Sinh Vien Khoi A: " << endl;
+				for(int i = 0; i < nA; i++){
+					inA[i].PrintThiSinhKhoiA();
+				}
+				cout << "Danh Sach Sinh Vien Khoi B: " << endl;
+				for(int i = 0; i < nB; i++){
+					inB[i].PrintThiSinhKhoiB();
+				}
+				cout << "Danh Sach Sinh Vien Khoi C: " << endl;
+				for(int i = 0; i < nC; i++){
+					inC[i].PrintThiSinhKhoiC();
+				}	
+				break;	
+			}
+			default:{
+				cout << "No output";
+				break;
+			}
+		}
+	}
